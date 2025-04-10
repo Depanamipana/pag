@@ -21,6 +21,7 @@ html, body{
     z-index: 2; /* Encima de la máscara */
     color: aliceblue;
     font-family: "Tilt Neon", sans-serif;
+    
 
   }
 
@@ -30,6 +31,8 @@ html, body{
     position: relative; /* Necesario para aplicar z-index */
     z-index: 2; /* Encima de la máscara */
   }
+   
+
 
   
 
