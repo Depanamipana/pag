@@ -19,7 +19,6 @@ html, body{
   
   position: relative; /* Necesario para aplicar z-index */
   z-index: 2; /* Encima de la máscara */
-  color: aliceblue;
   font-family: "Tilt Neon", sans-serif;
   
 
@@ -39,7 +38,23 @@ html, body{
   z-index: 2; /* Encima de la máscara */
 }
  
-
+#agotadoMsg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: red;
+  font-size: 60px;
+  font-family: "Tilt Neon", sans-serif;
+  padding: 40px;
+  border: 5px solid red;
+  text-align: center;
+  z-index: 999;
+  display: none;
+  box-shadow: 0 0 20px red, 0 0 40px red;
+  border-radius: 20px;
+}
 
 
 
@@ -79,6 +94,16 @@ html, body{
   margin: 0;
   font-size: 100px;
   text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow;
+}
+
+.JJ{
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  font-size: 39px;
+  text-shadow: 0 0 5px rgb(0, 60, 255), 0 0 15px rgb(0, 38, 255), 0 0 30px rgb(0, 60, 255), 0 0 50px rgb(47, 0, 255);
+
 }
 
 .neon3 {
