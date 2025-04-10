@@ -38,6 +38,7 @@ html, body{
   z-index: 2; /* Encima de la máscara */
 }
  
+/* letreto agotado */
 #agotadoMsg {
   position: fixed;
   top: 50%;
