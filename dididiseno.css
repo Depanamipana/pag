@@ -1,45 +1,39 @@
-html, body{
-  margin:0;padding:0;background:#4e1072;
-  height:100%;
-  overflow-x:hidden;
-  
-}
-.bg-mask {
+/* Asegura que el canvas esté detrás del texto */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: fixed;
-  background: linear-gradient(45deg, rgb(0, 0, 0) 0, #3c0f57 100%);
-  z-index: 0 ; /* Fondo detrás */
+  z-index: -1; /* Coloca el canvas detrás */
 }
 
- 
-.Tarjetas{
-  display: flex;
-  
-  
-  position: relative; /* Necesario para aplicar z-index */
-  z-index: 2; /* Encima de la máscara */
-  color: aliceblue;
-  font-family: "Tilt Neon", sans-serif;
-  
-
-}
-
-.card1{
-  background-color: black;
-
-}
-
-
-
-
-
+/* Estilo para el contenedor del texto */
 .container {
   position: relative; /* Necesario para aplicar z-index */
   z-index: 2; /* Encima de la máscara */
 }
- 
 
+
+.card-text{
+color: rgb(255, 255, 255);
+}
+
+
+.neon4{
+
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+  margin: 0;
+  font-size: 50px;
+  text-shadow: 0 0 5px rgb(19, 0, 189), 0 0 15px rgb(57, 21, 189), 0 0 30px rgb(14, 32, 189), 0 0 50px red;
+
+}
 
 
 
@@ -71,15 +65,7 @@ html, body{
   text-shadow: 0 0 5px red, 0 0 15px red, 0 0 30px red, 0 0 50px red;
 }
 
-.neon2 {
-  font-family: "Neonderthaw", cursive;
-  font-weight: 400;
-   font-style: normal;
-  letter-spacing: 8px;
-  margin: 0;
-  font-size: 100px;
-  text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow;
-}
+
 
 .neon3 {
   font-family: monospace;
