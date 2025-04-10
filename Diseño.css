@@ -13,23 +13,26 @@ html, body{
   }
   
    
-
-  .container {
-    position: relative; /* Necesario para aplicar z-index */
-    z-index: 2; /* Encima de la máscara */
-  }
-
   .Tarjetas{
     display: flex;
-    margin: 1.5;
-    padding: 1.5;
+    
+    
     position: relative; /* Necesario para aplicar z-index */
     z-index: 2; /* Encima de la máscara */
     color: aliceblue;
     font-family: "Tilt Neon", sans-serif;
 
   }
- 
+
+
+
+  .container {
+    position: relative; /* Necesario para aplicar z-index */
+    z-index: 2; /* Encima de la máscara */
+  }
+
+  
+
  
 
   .container {
